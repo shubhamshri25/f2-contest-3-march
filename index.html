@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h3>Blogging Website</h3>
+        <button id="btn-h">Create New Post</button>
+    </header>
+
+    <div class="modal">
+        <div class="modal-content">
+            <form>
+                <h3 class="modal-heading">Create a post</h3>
+                <span id="cancel">✖</span>
+                <input type="text" id="title" name="title" required placeholder="Enter your heading...">
+                <textarea id="description" name="description" required rows="10" cols="72"
+                    placeholder="Enter your blogPost..."></textarea>
+                <button type="submit" class="btn" id="savePost"> Publish post</button>
+                <button type="reset" class="btn">Cancel post</button>
+            </form>
+        </div>
+    </div>
+    <div class="blog-post-container">
+        <p id="blog-post-heading"></p>
+        <p id="blog-post-content"></p>
+        <button class="edit-button">Edit Post</button>
+        <button class="delete-button">Delete Post</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
